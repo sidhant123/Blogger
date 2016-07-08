@@ -6,6 +6,8 @@ Tags:
 	<%end%>
 </p>
 
+<p><%= image_tag @article.image.url %></p>
+
 <p><%= @article.body %></p>
 <h3>Comments (<%= @article.comments.size %>)
 <%= render partial: 'articles/comment',collection: @article.comments %>
